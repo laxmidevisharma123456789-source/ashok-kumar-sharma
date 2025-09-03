@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhawani Optical – Paota, Kotputli (Bharor)</title>
+  <meta name="description" content="Bhawani Optical – Eye testing, prescription glasses, contact lenses, sunglasses. Near Government Hospital, Paota, Kotputli, Bharor. Optician: Ashok Kumar Sharma. Call 8003849847." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1229;
+      --card: rgba(255,255,255,.08);
+      --stroke: rgba(255,255,255,.12);
+      --text: #eef1ff;
+      --muted: rgba(238,241,255,.78);
+      --neon: #61ffca;
+      --accent: #7aa2ff;
+      --glass: rgba(255,255,255,.14);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background: radial-gradient(1200px 800px at 20% -10%, #16234a 0%, rgba(22,35,74,0) 60%),
+                              radial-gradient(800px 600px at 120% 20%, #1a2f6b 0%, rgba(26,47,107,0) 55%),
+                              var(--bg);
+      color:var(--text);font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+
+    /* Glassmorphism cards */
+    .card{background:var(--card);border:1px solid var(--stroke);backdrop-filter: blur(10px);
+      border-radius:22px;padding:18px;box-shadow:0 10px 35px rgba(0,0,0,.25)}
+
+    /* Header / Hero */
+    header{position:relative;overflow:hidden;border-bottom:1px dashed rgba(255,255,255,.08)}
+    .hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{height:52px;width:52px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#1f2b5a, #0f1837);border:1px solid var(--stroke);box-shadow:inset 0 0 20px rgba(97,255,202,.15), 0 10px 30px rgba(0,0,0,.25)}
+    .logo svg{filter:drop-shadow(0 4px 12px rgba(97,255,202,.55))}
+    h1{font-size:28px;margin:0 0 4px 0}
+    .tag{display:inline-block;font-weight:700;color:#0b1229;background:var(--neon);padding:4px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08)}
+    .slogan{margin:8px 0 0 0;color:var(--muted)}
+    .hero-actions{display:flex;gap:12px;margin-top:16px}
+    .btn{border-radius:14px;padding:12px 16px;border:1px solid var(--stroke);background:var(--glass);font-weight:700;text-decoration:none;display:inline-flex;gap:8px;align-items:center;transform:translateZ(0);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease}
+    .btn:hover{transform:translateY(-2px) scale(1.01);box-shadow:0 12px 24px rgba(0,0,0,.28);border-color:rgba(255,255,255,.28)}
+    .btn.primary{background:linear-gradient(135deg,var(--neon),#c5ffe9);color:#0b1229;border-color:#a9ffe0}
+    .btn.ghost{background:transparent}
+
+    /* Grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+
+    /* Service card tilt */
+    .tilt{perspective:800px}
+    .tilt .card{transition:transform .15s ease}
+    .tilt:hover .card{transform:rotateX(2deg) rotateY(-3deg)}
+
+    /* Sections */
+    section{margin:26px 0}
+    h2{font-size:22px;margin:0 0 12px 0}
+    p{color:var(--muted)}
+
+    /* List */
+    ul.features{list-style:none;padding:0;margin:6px 0 0 0;display:grid;gap:8px}
+    ul.features li{display:flex;gap:10px;align-items:flex-start}
+    .dot{height:9px;width:9px;border-radius:50%;margin-top:6px;background:var(--neon);box-shadow:0 0 16px var(--neon)}
+
+    /* Form */
+    .form{display:grid;gap:10px}
+    .input{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--stroke);background:rgba(255,255,255,.08);color:var(--text);outline:none}
+    .input:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(97,255,202,.16)}
+
+    /* Footer */
+    footer{margin:36px 0 18px;border-top:1px dashed rgba(255,255,255,.08);padding-top:16px;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="container" id="home">
+    <div class="hero">
+      <div class="card">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="glasses icon"><path d="M4 13a4 4 0 1 0 8 0v-1h0a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v1Zm8 0a4 4 0 1 0 8 0v-1a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v1Z" stroke="var(--neon)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h1>Bhawani Optical</h1>
+            <span class="tag">Optician: Ashok Kumar Sharma</span>
+          </div>
+        </div>
+        <p class="slogan">Near Government Hospital, Paota, Kotputli, Bharor • Call: <a href="tel:8003849847" aria-label="Call 8003849847">8003849847</a></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#book">Book Eye Test</a>
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn ghost" href="#services">Services</a>
+        </div>
+      </div>
+      <div class="card" style="min-height:240px;display:grid;place-items:center;text-align:center">
+        <div>
+          <h2 style="margin:0 0 8px">See Better, Look Better</h2>
+          <p>Computerised eye testing • Prescription glasses • Contact lenses • Sunglasses • Frame repairs</p>
+          <div style="margin-top:12px;display:flex;gap:10px;justify-content:center">
+            <a class="btn" href="https://wa.me/918003849847" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <span>WhatsApp</span>
+            </a>
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bhawani%20Optical%2C%20Near%20Government%20Hospital%2C%20Paota%2C%20Kotputli%2C%20Bharor" target="_blank" rel="noopener" aria-label="Open Google Maps">
+              <span>Open Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="tilt"><div class="card"><h3>Eye Testing</h3><p>Computerised vision check by trained optician.</p></div></div>
+        <div class="tilt"><div class="card"><h3>Prescription Glasses</h3><p>Single vision, bifocal & progressive lenses with quality frames.</p></div></div>
+        <div class="tilt"><div class="card"><h3>Contact Lenses</h3><p>Daily/Monthly disposables with fit & care guidance.</p></div></div>
+        <div class="tilt"><div class="card"><h3>Sunglasses</h3><p>UV-protected shades, polarised options available.</p></div></div>
+        <div class="tilt"><div class="card"><h3>Repairs & Fitting</h3><p>Nose-pads, screw tightening, alignment & adjustments.</p></div></div>
+        <div class="tilt"><div class="card"><h3>Kids & Budget Range</h3><p>Comfortable, durable and affordable options for everyone.</p></div></div>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="grid-2">
+        <div class="card">
+          <h2>Book an Eye Test (WhatsApp)</h2>
+          <p style="margin-bottom:12px">Send us your preferred date and time. We will confirm shortly on WhatsApp.</p>
+          <form class="form" onsubmit="return sendBooking(event)">
+            <input class="input" id="name" placeholder="Your Name" required />
+            <input class="input" id="date" placeholder="Preferred Date (e.g. 05-09-2025)" required />
+            <input class="input" id="time" placeholder="Preferred Time (e.g. 4:30 PM)" required />
+            <button class="btn primary" type="submit">Send on WhatsApp</button>
+          </form>
+        </div>
+        <div class="card">
+          <h2>Find Us</h2>
+          <ul class="features">
+            <li><span class="dot"></span><span>Address: Near Government Hospital, Paota, Kotputli, Bharor</span></li>
+            <li><span class="dot"></span><span>Optician: <strong>Ashok Kumar Sharma</strong></span></li>
+            <li><span class="dot"></span><span>Phone: <a href="tel:8003849847">8003849847</a></span></li>
+          </ul>
+          <div style="margin-top:12px; border-radius:16px; overflow:hidden; border:1px solid var(--stroke)">
+            <iframe title="Bhawani Optical Map" width="100%" height="260" style="border:0" loading="lazy" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD-PLACEHOLDER-KEY&q=Bhawani+Optical%2C+Near+Government+Hospital%2C+Paota%2C+Kotputli%2C+Bharor">
+            </iframe>
+          </div>
+          <p style="margin-top:8px;font-size:12px;color:var(--muted)">Note: Replace the API key above with your own Google Maps Embed API key for the live embed, or remove the iframe and keep the <em>Open Maps</em> button.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="grid-2">
+        <div class="card">
+          <h2>Contact</h2>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="tel:8003849847">Call Now</a>
+            <a class="btn" target="_blank" rel="noopener" href="https://wa.me/918003849847">WhatsApp</a>
+            <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bhawani%20Optical%2C%20Near%20Government%20Hospital%2C%20Paota%2C%20Kotputli%2C%20Bharor">Open in Google Maps</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2>About</h2>
+          <p>Bhawani Optical provides complete optical solutions with quality products and friendly service.</p>
+          <ul class="features">
+            <li><span class="dot"></span><span>Fast delivery and precise fitting</span></li>
+            <li><span class="dot"></span><span>Wide range of frames and lenses</span></li>
+            <li><span class="dot"></span><span>Repairs and adjustments on site</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <span>© <span id="year"></span> Bhawani Optical • Paota, Kotputli (Bharor)</span>
+      <span>Call: <a href="tel:8003849847">8003849847</a></span>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // WhatsApp booking sender
+    function sendBooking(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const date = document.getElementById('date').value.trim();
+      const time = document.getElementById('time').value.trim();
+      if(!name || !date || !time) return false;
+      const msg = `Eye Test Booking Request\nName: ${name}\nPreferred Date: ${date}\nPreferred Time: ${time}\nShop: Bhawani Optical`;
+      const url = `https://wa.me/918003849847?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank', 'noopener');
+      return false;
+    }
+  </script>
+  <iframe 
+  src="https://www.google.com/maps?q=Bhawani+Optical+Paota+Kotputli&output=embed" 
+  width="100%" 
+  height="250" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+<a href="https://maps.google.com/?q=Bhawani+Optical+Paota+Kotputli" target="_blank" class="btn">
+  📍 Open in Google Maps
+</a>
+
+</body>
+</html>
